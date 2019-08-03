@@ -1,26 +1,118 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        label {width: 100px; display: inline-block; vertical-align:top; }
-        div {display:table; margin-left:auto; margin-right:auto; }
-        .orderinfo {  width: 250px; }
-        input[type='number'] { width:60px; }		
-		ul > li { list-style-type:none; }
+        label {
+            width: 100px;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .orderinfo {
+            width: 250px;
+        }
+
+        input[type='number'] {
+            width: 60px;
+        }
+
+        ul>li {
+            list-style-type: none;
+        }
     </style>
 </head>
-<body>
 
-        <!--
-		작업 순서
-		 개인 정보 
-         배송지 정보
-		 주문 정보
-		 주문하기
-		  다시작성 : form 입력 값 초기화
-	  -->
+<body>
     <h1>상품 주문서</h1>
+
+
+    <form action="" method="get">
+        <fieldset>
+            <legend>개인정보</legend>
+
+            <div>
+                <label for="a1">
+                    이름
+                </label>
+                <input type="text" name="" value="" id="a1" placeholder="이름을 입력하시오">
+            </div>
+
+
+            <div>
+                <label for="a2">
+                    연락처
+                </label>
+                <input type="tel" name="" value="" id="a2" placeholder="연락처를 입력하시오">
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>배송지 정보</legend>
+
+            <div>
+                <label for="">
+                    주소
+                </label>
+                <input type="text" name="" value="" required>
+            </div>
+
+
+            <div>
+                <label for="">
+                    전화번호
+                </label>
+                <input type="tel" name="" value="" required>
+            </div>
+
+
+            <div>
+                <label for="">
+                    메모
+                </label>
+                <textarea name="" id="" cols="23" rows="5"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>주문정보</legend>
+
+            <div>
+                <input type="checkbox" name="" value="" checked>
+                <label for="b1" class="orderinfo">
+                    과테말라 안티구아(100g)
+                </label>
+                <input type="number" id="b2">개
+            </div>
+
+            <div>
+                <input type="checkbox" name="" value="">
+                <label for="b3" class="orderinfo">
+                    인도네시아 만델링(100g)
+                </label>
+                <input type="number" id="b3">개
+            </div>
+
+            <div>
+                <input type="checkbox" name="" value="">
+                <label for="b4" class="orderinfo">
+                    탐라는도다(블렌딩) (100g)
+                </label>
+                <input type="number" id="b4">개
+            </div>
+
+        </fieldset>
+
+        <div style="text-align: center">
+            <input type="submit" name="" value="주문하기">
+            <input type="submit" name="" value="다시 작성">
+        </div>
+
+    </form>
+
 </body>
+
 </html>
