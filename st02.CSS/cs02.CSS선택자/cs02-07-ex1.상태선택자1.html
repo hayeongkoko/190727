@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+<style>
+*{margin: 0px; padding: 0px;}
+
+li{list-style:none;  float: left; width: 100px; height:50px;}
+
+.odd{background-color: darkred;}
+.even{background-color: red;}
+
+#first{border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;}
+
+#last{border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;}
+
+
+</style>
+</head>
+<body>
+        <pre>
+                class 속성과 id 속성을 li 태그에 설정하고 그림처럼 style을 설정하시오.
+                해야할 일
+                    0. li 기호 없애기 
+                    1. li 수평으로 출력되게
+                    2. li에 배경색 넣기
+                    3. 홀수, 짝수 처리
+                    4. 첫번째 li 태그를 찾고 라운드 처리
+                    5. 마지막 li 태그를 찾고 라운드 처리
+            </pre>
+            <ul>
+                <li id="first" class="odd">1번째</li>
+                <li class="even">2번째</li>
+                <li class="odd">3번째</li>
+                <li  class="even">4번째</li>
+                <li class="odd">5번째</li>
+                <li  class="even">6번째</li>
+                <li class="odd">7번째</li>
+                <li id="last"  class="even">8번째</li>
+            </ul>
+</body>
+</html>
