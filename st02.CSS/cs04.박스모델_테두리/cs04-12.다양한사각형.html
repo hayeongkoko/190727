@@ -6,19 +6,39 @@
     <style>
     *{margin: 0; padding: 0;}
 
-
-    div#borderstyle > div.box1{ border: 2px black solid; width: 200px; height: 100px; margin: 20px; float: left;}
-
-    div#borderstyle > div.box2{border: 2px black dotted; width: 200px; height: 100px; margin: 20px; float: left;}
-
-    div#borderstyle > div.box3{ border: 2px black dashed; width: 200px; height: 100px; margin: 20px; float: left;}
+/*클래스 속성으로 한번에 찿기*/
+.box1 , .box2 , .box3 , .box4 , .box5 {}
 
 
-     div#bordercolor > div.box1{ border: 2px red dotted; width: 200px; height: 100px; margin: 20px;}
-     div#bordercolor > div.box2{ border: 2px blue dotted; width: 200px; height: 100px; margin: 20px;}
-     div#bordercolor > div.box3{border: 2px dotted;  width: 200px; height: 100px; margin: 20px;}
-    
+/* 자식으로 13개 한번에 찿기*/
+div > div{width: 200px; height: 100px; background-color: white; border: 1px solid black; margin: 20px; float: left;  }
 
+div#borderstyle ,div#bordercolor, div#borderwidth {clear: both  }
+
+
+
+
+
+    div#borderstyle > div.box1{border: 2px black solid;}
+
+    div#borderstyle > div.box2{border: 2px black dotted;}
+
+    div#borderstyle > div.box3{border: 2px black dashed;}
+
+    div#borderstyle > div.box4{border-top: solid; border-right: dotted; border-bottom: dashed;}
+
+
+
+     div#bordercolor > div.box1{border: 2px red dotted;}
+     div#bordercolor > div.box2{border: 2px blue dotted;}
+     div#bordercolor > div.box3{border: 2px dotted; border-color:red blue;}
+     div#bordercolor > div.box4{border: 2px dotted;  border-right-color: red; border-bottom-color: blue; border-left-color: yellow;  }
+
+     div#borderwidth > div.box1{border-width: 2px;}
+     div#borderwidth > div.box2{border-width: 3px  5px;}
+     div#borderwidth > div.box3{border-top-width: 3px; border-right-width: 5px; border-bottom-width: 3px; border-left-width: 5px; }
+     div#borderwidth > div.box4{border-top-width: 7px; border-right-width: 15px; border-bottom-width: 25px; border-left-width: 35px; }
+     div#borderwidth > div.box5{border-top-width: 7px; border-right-width: 15px; border-bottom-width: 25px; border-left-width: 35px; }
 
     </style>
 </head>
